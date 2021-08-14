@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <style>
+        .left {
+            background: red;
+            width: 200px;
+            height: 800px;
+            float: left;
+        }
+        
+        .right {
+            height: 800px;
+            margin-left: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+    <script>
+        // var arr = [1, 1, 2, 2, 3, 3]
+
+        // function get(arr) {
+        //     var array = []
+        //     for (var i = 0; i < arr.length; i++) {
+        //         if (array.indexOf(arr[i]) === -1) {
+        //             array.push(arr[i])
+        //         }
+
+        //     }
+        //     return array
+        // }
+
+        // console.log(get(arr));
+
+        // var item = [...new Set(arr)]
+        // console.log(item);
+        // var item = [1900000, 2333, 32312, 4, 123, 421, 5123, 6123]
+
+        // function get(item) {
+        //     for (let i = 0; i < item.length - 1; i++) {
+        //         for (j = 0; j < item.length - 1 - i; j++) {
+        //             if (item[j] > item[j + 1]) {
+        //                 let c = item[j]
+        //                 item[j] = item[j + 1]
+        //                 item[j + 1] = c
+        //             }
+        //         }
+        //     }
+        //     return item
+        // }
+        // console.log(get(item));
+
+        // function fn(n) {
+        //     if (n === 1) {
+        //         return 1
+        //     }
+        //     return fn(n - 1) + 1
+        // }
+        // console.log(fn(100));
+
+        // // function fn(a, b) {
+        // //     var c = a + b
+        // //     a++
+        // //     if (a++ > 100) {
+        // //         return c
+        // //     } else {
+        // //         return fn(a++, b)
+        // //     }
+        // // }
+        // console.log(fn(2, 0));
+        // var abc = [123, 432, 111, 4444, 233, 1, 2, 3]
+
+        // function get(abc) {
+        //     for (let i = 0; i < abc.length; i++) {
+        //         for (let j = 0; j < abc.length; j++) {
+        //             if (abc[j] > abc[j + 1]) {
+        //                 var bc = abc[j]
+        //                 abc[j] = abc[j + 1]
+        //                 abc[j + 1] = bc
+        //             }
+        //         }
+        //     }
+        //     return abc
+        // }
+        // console.log(get(abc));
+        function get(a, b) {
+            a += b
+            b++
+            if (b > 100) {
+                console.log(a);
+                return a
+            } else {
+                return get(a, b)
+            }
+        }
+        get(0, 1)
+    </script>
+</body>
+
+</html>
